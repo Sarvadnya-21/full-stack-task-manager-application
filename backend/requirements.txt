@@ -3,6 +3,7 @@ uvicorn
 sqlalchemy
 pymysql
 bcrypt
+passlib[bcrypt]
 PyJWT
 python-dotenv
 pydantic[email]
