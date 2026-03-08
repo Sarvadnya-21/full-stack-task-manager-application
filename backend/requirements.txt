@@ -2,7 +2,9 @@ fastapi
 uvicorn
 sqlalchemy
 pymysql
-passlib[bcrypt]
+bcrypt
 PyJWT
 python-dotenv
 pydantic[email]
+gunicorn
+cryptography
