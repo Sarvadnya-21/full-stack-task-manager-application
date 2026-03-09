@@ -20,6 +20,7 @@ app.add_middleware(
     CORSMiddleware,
     allow_origins=[
         "http://localhost:5173",
+    "https://your-vercel-app.vercel.app"
         "http://localhost:5174",
         "http://localhost:3000",
     ],
@@ -53,7 +54,7 @@ async def global_exception_handler(request: Request, exc: Exception):
         }
     )
 
-app.include_router(auth.router, prefix="/api/v1/auth", tags=["Auth"])
+app.include_router(auth.router, prefix="/api/v1/auth/login", tags=["Auth"])
 app.include_router(tasks.router, prefix="/api/v1/tasks", tags=["Tasks"])
 
 @app.get("/")
