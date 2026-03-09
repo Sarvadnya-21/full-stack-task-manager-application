@@ -20,9 +20,10 @@ app.add_middleware(
     CORSMiddleware,
     allow_origins=[
         "http://localhost:5173",
-    "https://your-vercel-app.vercel.app"
+        "https://your-vercel-app.vercel.app"
         "http://localhost:5174",
         "http://localhost:3000",
+        "https://full-stack-task-manager-application-gray.vercel.app"
     ],
     allow_credentials=True,
     allow_methods=["*"],
